@@ -1,0 +1,11 @@
+plugins { id 'com.android.application' }
+android {
+  namespace 'com.s24.performance'
+  compileSdk 35
+  defaultConfig { applicationId 'com.s24.performance'; minSdk 30; targetSdk 34; versionCode 1; versionName '0.1.0' }
+  compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
+dependencies {
+  implementation 'com.github.MuntashirAkon:libadb-android:3.1.1'
+  implementation 'org.conscrypt:conscrypt-android:2.5.3'
+}
